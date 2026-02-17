@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>G10 • Minerais críticos × Curativos</title>
+  <style>
+    :root{
+      --orange:#D95B31;
+      --blue:#609CD2;
+      --navy:#1E3658;
+      --ink:#0B1220;
+      --bg:#F6F8FB;
+      --card:#FFFFFF;
+      --line:rgba(11,18,32,0.10);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+      background:var(--bg);
+      color:var(--ink);
+      padding:18px;
+    }
+    .wrap{max-width:1100px;margin:0 auto;display:grid;gap:14px}
+    .hero{
+      background:linear-gradient(135deg, rgba(217,91,49,.12), rgba(96,156,210,.14) 55%, rgba(30,54,88,.10));
+      border:1px solid var(--line);
+      border-radius:18px;
+      padding:16px;
+      display:grid;
+      grid-template-columns:120px 1fr;
+      gap:14px;
+      align-items:center;
+    }
+    .logo{
+      width:110px;height:110px;object-fit:contain;border-radius:14px;
+      background:rgba(255,255,255,.85);
+      border:1px solid var(--line);
+      padding:8px;
+    }
+    .pills{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:8px}
+    .pill{
+      display:inline-flex;align-items:center;gap:8px;
+      padding:6px 10px;border-radius:999px;
+      background:rgba(255,255,255,.85);
+      border:1px solid var(--line);
+      font-size:12px;white-space:nowrap;
+    }
+    .dot{width:10px;height:10px;border-radius:99px;display:inline-block}
+    h1{margin:0;font-size:26px;font-weight:900;color:var(--navy);line-height:1.1}
+    .sub{margin-top:8px;font-size:14px;color:rgba(11,18,32,.75);line-height:1.35}
+    .card{
+      background:var(--card);
+      border:1px solid var(--line);
+      border-radius:16px;
+      box-shadow:0 10px 24px rgba(11,18,32,.06);
+      padding:16px;
+    }
+    .kicker{
+      font-size:12px;letter-spacing:.8px;text-transform:uppercase;
+      color:rgba(11,18,32,.65);margin-bottom:6px
+    }
+    .title{font-size:22px;font-weight:800;color:var(--navy);line-height:1.15}
+    .subtitle{font-size:14px;color:rgba(11,18,32,.72);margin-top:8px;line-height:1.35}
+    a{color:var(--blue);text-decoration:none;border-bottom:1px dashed rgba(96,156,210,.75)}
+    .topgrid{display:grid;grid-template-columns:1.2fr .8fr;gap:14px}
+    .grid{
+      display:grid;grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:14px;margin-top:14px
+    }
+    .mcard{
+      border:1px solid var(--line);border-radius:16px;padding:14px;background:rgba(255,255,255,.9)
+    }
+    .mhead{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;align-items:center}
+    .mtitle{font-size:16px;font-weight:900;color:var(--navy)}
+    .cols{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}
+    .label{font-size:12px;font-weight:800;color:rgba(11,18,32,.70);margin-bottom:6px}
+    ul{margin:0;padding-left:18px;font-size:13px;line-height:1.35}
+    li{margin-bottom:6px}
+    .refs{margin-top:12px}
+    .refsline{display:flex;flex-wrap:wrap;gap:10px;font-size:13px}
+    .note{margin-top:14px;font-size:12px;color:rgba(11,18,32,.65);line-height:1.35}
+    .footer{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;padding:6px 2px 2px}
+    .muted{font-size:12px;color:rgba(11,18,32,.55)}
+    @media (max-width: 980px){
+      .hero{grid-template-columns:1fr}
+      .topgrid{grid-template-columns:1fr}
+      .grid{grid-template-columns:1fr}
+      .cols{grid-template-columns:1fr}
+      .logo{justify-self:start}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="hero">
+      <!-- Coloque o logo na mesma pasta do HTML com o nome logo2.jpeg -->
+      <img class="logo" src="logo2.jpeg" alt="Logo PET-Saúde G10 UFPel" />
+      <div>
+        <div class="pills">
+          <span class="pill"><span class="dot" style="background:var(--orange)"></span>G10 • Telemonitoramento de Feridas Crônicas</span>
+          <span class="pill"><span class="dot" style="background:var(--blue)"></span>Minerais críticos • Data centers & IA</span>
+          <span class="pill"><span class="dot" style="background:var(--navy)"></span>Curativos • Evidência</span>
+        </div>
+        <h1>Do data center à ferida crônica</h1>
+        <div class="sub">
+          Alguns minerais “críticos” para infraestrutura de IA também aparecem em curativos modernos —
+          mas com função diferente: <b>hardware e energia</b> de um lado, <b>controle microbiano, conforto e manejo clínico</b> do outro.
+        </div>
+      </div>
+    </div>
+
+    <div class="topgrid">
+      <div class="card">
+        <div class="kicker">1) Fontes</div>
+        <div class="title">Lista de minerais e contexto</div>
+        <div class="subtitle">
+          Link solicitado (Visual Capitalist) e uma fonte aberta complementar para “checagem rápida” (USGS).
+        </div>
+        <div style="margin-top:10px;font-size:14px;line-height:1.45">
+          • USGS: <a href="https://www.usgs.gov/media/images/key-minerals-data-centers-infographic" target="_blank" rel="noreferrer">Key minerals in data centers</a><br/>
+          • Visual Capitalist: <a href="https://www.visualcapitalist.com/the-critical-minerals-powering-the-ai-boom/?mc_cid=828e30ab98&mc_eid=d1f0a9913e" target="_blank" rel="noreferrer">The critical minerals powering the AI boom</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="kicker">2) Recorte do G10</div>
+        <div class="title">Quais entram em curativos?</div>
+        <div class="subtitle">Feridas crônicas: uso direto em coberturas, impregnados, camadas de contato e controle de odor.</div>
+        <div style="margin-top:10px;display:grid;gap:10px;font-size:13px">
+          <div style="display:flex;gap:10px;align-items:center">
+            <span class="dot" style="background:var(--orange)"></span>
+            <div><b>Forte / comum:</b> prata; silicone (via silício); carvão ativado; cobre (em expansão)</div>
+          </div>
+          <div style="display:flex;gap:10px;align-items:center">
+            <span class="dot" style="background:rgba(11,18,32,.35)"></span>
+            <div><b>Sem uso direto típico:</b> níquel, cobalto, terras raras, Sn/Ta/W (mais “hardware” que “curativo”)</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="kicker">3) Mapa rápido</div>
+      <div class="title">Minerais críticos × aplicações em feridas crônicas</div>
+      <div class="subtitle">Cards com: (a) por que é crítico em data centers; (b) se/como aparece em curativos; (c) referência.</div>
+
+      <div class="grid">
+
+        <!-- PRATA -->
+        <div class="mcard">
+          <div class="mhead">
+            <div class="mtitle">Prata (Ag)</div>
+            <span class="pill"><span class="dot" style="background:var(--orange)"></span>USO FORTE em curativos</span>
+          </div>
+          <div class="cols">
+            <div>
+              <div class="label">Em data centers / IA</div>
+              <ul>
+                <li>Contato elétrico/condutividade em componentes</li>
+                <li>Conexões e interfaces de alta performance (uso pontual)</li>
+              </ul>
+            </div>
+            <div>
+              <div class="label">Em curativos (feridas crônicas)</div>
+              <ul>
+                <li>Curativos impregnados (espumas, alginatos, hidrofibras)</li>
+                <li>Ação antimicrobiana; uso racional conforme indicação</li>
+              </ul>
+            </div>
+          </div>
+          <div class="refs">
+            <div class="label">Referências (verificadas)</div>
+            <div class="refsline">
+              <a href="https://woundsinternational.com/consensus-documents/international-consensus-appropriate-use-silver-dressings-wounds-english-en/" target="_blank" rel="noreferrer">Wounds International (consenso)</a>
+              <a href="https://www.cochrane.org/evidence/CD005486_topical-silver-treating-infected-wounds" target="_blank" rel="noreferrer">Cochrane (prata tópica)</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- COBRE -->
+        <div class="mcard">
+          <div class="mhead">
+            <div class="mtitle">Cobre (Cu)</div>
+            <span class="pill"><span class="dot" style="background:var(--blue)"></span>USO EM EXPANSÃO</span>
+          </div>
+          <div class="cols">
+            <div>
+              <div class="label">Em data centers / IA</div>
+              <ul>
+                <li>Cabos, barramentos e conectores (condutor central)</li>
+                <li>Infraestrutura elétrica e equipamentos</li>
+              </ul>
+            </div>
+            <div>
+              <div class="label">Em curativos (feridas crônicas)</div>
+              <ul>
+                <li>Curativos/tecidos com óxido de cobre (antimicrobiano)</li>
+                <li>Linha promissora para suporte à regeneração</li>
+              </ul>
+            </div>
+          </div>
+          <div class="refs">
+            <div class="label">Referência (verificada)</div>
+            <div class="refsline">
+              <a href="https://pubmed.ncbi.nlm.nih.gov/25901580/" target="_blank" rel="noreferrer">PubMed (óxido de cobre em curativos)</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- SILÍCIO / SILICONE -->
+        <div class="mcard">
+          <div class="mhead">
+            <div class="mtitle">Silício (Si) → Silicone médico</div>
+            <span class="pill"><span class="dot" style="background:var(--navy)"></span>USO CONSOLIDADO</span>
+          </div>
+          <div class="cols">
+            <div>
+              <div class="label">Em data centers / IA</div>
+              <ul>
+                <li>Base de semicondutores (chips)</li>
+                <li>Eletrônica de potência e processamento</li>
+              </ul>
+            </div>
+            <div>
+              <div class="label">Em curativos (feridas crônicas)</div>
+              <ul>
+                <li>Camada de contato/adesivo atraumático</li>
+                <li>Menos dor e trauma na troca; protege pele perilesional</li>
+              </ul>
+            </div>
+          </div>
+          <div class="refs">
+            <div class="label">Referência (verificada)</div>
+            <div class="refsline">
+              <a href="https://woundsinternational.com/wp-content/uploads/2023/02/c6c17c8108884b42545f060eabc1d29f.pdf" target="_blank" rel="noreferrer">Wounds International (PDF silicone)</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARBONO -->
+        <div class="mcard">
+          <div class="mhead">
+            <div class="mtitle">Carbono (C) / Grafite → Carvão ativado</div>
+            <span class="pill"><span class="dot" style="background:var(--blue)"></span>USO PRAGMÁTICO (odor)</span>
+          </div>
+          <div class="cols">
+            <div>
+              <div class="label">Em data centers / IA</div>
+              <ul>
+                <li>Grafite em baterias (ânodo) e gestão energética</li>
+                <li>Materiais/compósitos (dependendo do sistema)</li>
+              </ul>
+            </div>
+            <div>
+              <div class="label">Em curativos (feridas crônicas)</div>
+              <ul>
+                <li>Curativos com carvão ativado (controle de odor/adsorção)</li>
+                <li>Combinações carvão + prata (odor + bioburden)</li>
+              </ul>
+            </div>
+          </div>
+          <div class="refs">
+            <div class="label">Referência (verificada)</div>
+            <div class="refsline">
+              <a href="https://pubmed.ncbi.nlm.nih.gov/15575569/" target="_blank" rel="noreferrer">PubMed (carvão + prata)</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- SEM USO DIRETO -->
+        <div class="mcard">
+          <div class="mhead">
+            <div class="mtitle">Níquel (Ni)</div>
+            <span class="pill"><span class="dot" style="background:rgba(11,18,32,.45)"></span>SEM USO DIRETO</span>
+          </div>
+          <div class="cols">
+            <div>
+              <div class="label">Em data centers / IA</div>
+              <ul>
+                <li>Baterias e ligas (uso indireto)</li>
+                <li>Componentes estruturais (dependendo do equipamento)</li>
+              </ul>
+            </div>
+            <div>
+              <div class="label">Em curativos (feridas crônicas)</div>
+              <ul>
+                <li>Não é usado como ativo em curativos (risco de alergia/irritação).</li>
+              </ul>
+            </div>
+          </div>
+          <div class="note">Sem referência específica: não há uso típico direto em coberturas.</div>
+        </div>
+
+        <div class="mcard">
+          <div class="mhead">
+            <div class="mtitle">Cobalto (Co)</div>
+            <span class="pill"><span class="dot" style="background:rgba(11,18,32,.45)"></span>SEM USO DIRETO</span>
+          </div>
+          <div class="cols">
+            <div>
+              <div class="label">Em data centers / IA</div>
+              <ul>
+                <li>Baterias (cadeias de energia e UPS)</li>
+                <li>Materiais especiais (uso indireto)</li>
+              </ul>
+            </div>
+            <div>
+              <div class="label">Em curativos (feridas crônicas)</div>
+              <ul>
+                <li>Não é usado como ativo em curativos de feridas crônicas.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="note">Sem referência específica: não há uso típico direto em coberturas.</div>
+        </div>
+
+      </div>
+
+      <div class="note">
+        <b>Nota prática:</b> prata e cobre têm literatura, mas eficácia depende de indicação, tipo de ferida e desfecho.
+        Silicone é “material” bem consolidado para reduzir trauma. Carvão ativado é ferramenta direta para odor.
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="kicker">4) Referências gerais</div>
+      <div class="title">Fontes consultadas (links diretos)</div>
+      <ol style="margin:10px 0 0; padding-left:18px; font-size:14px; line-height:1.5">
+        <li><a href="https://www.usgs.gov/media/images/key-minerals-data-centers-infographic" target="_blank" rel="noreferrer">USGS — Key minerals in data centers</a></li>
+        <li><a href="https://www.visualcapitalist.com/the-critical-minerals-powering-the-ai-boom/?mc_cid=828e30ab98&mc_eid=d1f0a9913e" target="_blank" rel="noreferrer">Visual Capitalist — The critical minerals powering the AI boom</a></li>
+        <li><a href="https://www.cochrane.org/evidence/CD005486_topical-silver-treating-infected-wounds" target="_blank" rel="noreferrer">Cochrane — Prata tópica em feridas infectadas</a></li>
+        <li><a href="https://woundsinternational.com/consensus-documents/international-consensus-appropriate-use-silver-dressings-wounds-english-en/" target="_blank" rel="noreferrer">Wounds International — Consenso prata</a></li>
+        <li><a href="https://woundsinternational.com/wp-content/uploads/2023/02/c6c17c8108884b42545f060eabc1d29f.pdf" target="_blank" rel="noreferrer">Wounds International (PDF) — Soft silicone dressings</a></li>
+        <li><a href="https://pubmed.ncbi.nlm.nih.gov/15575569/" target="_blank" rel="noreferrer">PubMed — Carvão ativado + prata</a></li>
+        <li><a href="https://pubmed.ncbi.nlm.nih.gov/25901580/" target="_blank" rel="noreferrer">PubMed — Óxido de cobre em curativos</a></li>
+      </ol>
+    </div>
+
+    <div class="footer">
+      <div class="muted">PET-Saúde G10 • UFPel • Infográfico HTML (abrir e pronto)</div>
+      <div class="muted">
+        Paleta:
+        <span style="color:var(--orange);font-weight:900"> ●</span>
+        <span style="color:var(--blue);font-weight:900"> ●</span>
+        <span style="color:var(--navy);font-weight:900"> ●</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
